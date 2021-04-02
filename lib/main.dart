@@ -12,7 +12,24 @@ class Home extends StatelessWidget {
       title: 'Auction App',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Auction Portal'),
+          title:  RichText(
+            text:TextSpan(
+              text: "Mock ",
+              style: TextStyle(
+                fontSize: 25,
+                color: Colors.white,
+              ),
+              children: [
+                TextSpan(
+                text: "Auction",
+                style: TextStyle(
+                  fontSize: 25,
+                  color: Colors.red,
+                 ),
+                ),
+              ],
+            ),
+          ),
           backgroundColor: Colors.grey[900],
           centerTitle: true,
         ),
